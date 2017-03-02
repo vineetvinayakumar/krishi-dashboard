@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Angular Material</title>
+		<link rel="stylesheet" href="node_modules/angular-material/angular-material.min.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body ng-app="MyApp">
+		<div ng-cloak>
+		  <md-content layout="row" layout-align="center center" id="loginCard">
+			 <div flex-xs flex-gt-xs="75" flex-gt-md="30">
+				<div id="cowimageRow" layout="row" layout-align="center center">
+				   <center><img src="images/farmer-cow.png"></center>
+				</div>
+				<md-card md-theme-watch class="loginSection">
+					<div class="logoSection" layout="row" layout-align="center center">
+						<center><img src="images/logo.png"></center>
+					</div>
+					<div layout="row" layout-align="center center">
+						<h3>Krishi Reporting System</h3>
+					</div>
+					<md-card-content>
+						<form name="krishiLogin" action="">
+							<div layout="row">
+							  <md-input-container class="md-block" flex>
+								<label>User Name</label>
+								<input type="text" name="userName" ng-model="userName" required>
+							  </md-input-container>
+							</div>
+							<div layout="row">
+							  <md-input-container class="md-block" flex>
+								<label>Password</label>
+								<input type="password" name="userPassword" ng-model="userPassword" required>
+							  </md-input-container>
+							</div>
+							<div layout="row" layout-align="center center">
+								<md-button class="md-raised md-primary loginbtn" onclick="location.href='dashboard.html'">Sign in</md-button>
+							</div>
+						</form>
+					</md-card-content>
+				</md-card>
+			</div>
+		  </md-content>
+		</div>
+		<script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+		<script type="text/javascript" src="node_modules/angular-animate/angular-animate.min.js"></script>
+		<script type="text/javascript" src="node_modules/angular-aria/angular-aria.min.js"></script>
+		<script type="text/javascript" src="node_modules/angular-material/angular-material.min.js"></script>
+		<script type="text/javascript" src="node_modules/angular-route/angular-route.min.js"></script>
+		<script>
+			angular.module('MyApp', ['ngMaterial']);	
+		</script>
+		
+	</body>
+</html>

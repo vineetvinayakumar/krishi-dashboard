@@ -1,0 +1,60 @@
+<!DOCTPYE html>
+<html lang="en">
+   <head>
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <!-- CSS FILES START -->
+      <link rel="stylesheet" href="node_modules/angular-material/angular-material.min.css">
+	  <link rel="stylesheet" href="css/style.css">
+
+	  <!-- CSS FILES ENDS -->
+
+	  <title>Brand Dashboard</title>
+   </head>
+   <body ng-app="MyApp" ng-cloak>
+	   <div ng-controller="AppCtrl" ng-cloak>
+		  <md-content layout="row" class="md-whiteframe-1dp">
+			<md-icon class="logo">KRS</md-icon>
+			<md-nav-bar md-selected-nav-item="currentNavItem" nav-bar-aria-label="navigation links" layout="row" layout-align="end end" flex>
+			  <md-nav-item md-nav-sref="dashboard" name="dashboard">
+				Dashboard
+			  </md-nav-item>
+			  <md-nav-item md-nav-sref="agent_report" name="agent_report">
+				Agent Report
+			  </md-nav-item>
+			  <md-nav-item md-nav-sref="ivr_report" name="ivr_report">
+				IVR Report
+			  </md-nav-item>
+			  <md-nav-item md-nav-href="index.html" name="logout">
+				Logout
+			  </md-nav-item>
+			</md-nav-bar>
+		  </md-content>
+		  <div class="container">
+			 <div layout="row" id="reportWise">
+			 	<md-button md-no-ink class="md-primary">Today</md-button>
+				<md-button md-no-ink class="md-primary">Weekly</md-button>
+				<md-button md-no-ink class="md-primary">Datewise</md-button> 
+			 </div> 
+			 <div layout="row" id="date">
+				 Today 3 - March - 2017
+			 </div>
+    		<!-- THIS IS WHERE WE WILL INJECT OUR CONTENT ============================== -->
+    	   <div ui-view>
+
+		   </div>
+		  </div>
+		</div>
+
+		<!--
+		Copyright 2016 Google Inc. All Rights Reserved. 
+		Use of this source code is governed by an MIT-style license that can be foundin the LICENSE file at http://material.angularjs.org/HEAD/license.
+		-->
+	  <!-- JS FILES START -->
+	   <script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+	   <script type="text/javascript" src="node_modules/angular-animate/angular-animate.min.js"></script>
+	   <script type="text/javascript" src="node_modules/angular-aria/angular-aria.min.js"></script>
+	   <script type="text/javascript" src="node_modules/angular-material/angular-material.min.js"></script>
+	   <script type="text/javascript" src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+	   <script type="text/javascript" src="script/app.js"></script>
+   </body>
+</html>

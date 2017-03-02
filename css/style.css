@@ -1,0 +1,75 @@
+body{
+	background-color: #efefef;
+}
+
+.container{
+	padding: 0 2em;
+}
+
+#date{
+	color:#fd7474;
+	font-size: 0.8em;
+	padding-bottom: 0.8em;
+}
+/* Login CSS Start */
+
+md-input-container{
+	margin:6px 0;
+}
+
+#loginCard{
+    height: 100%;
+}
+
+#cowimageRow{
+	z-index: 998;
+	margin-top: 5px;
+	margin-bottom: -100px;
+}
+.loginSection{
+	z-index: 999;
+	padding: 0.5em 1.5em;
+}
+
+#loginForm{
+	padding: 3em 0;
+}
+
+.logoSection{
+	padding: 1.5em 0 0.5em 0;
+}
+
+.loginbtn{
+	padding: 0.2em 5em !important;
+	margin-top:1.5em !important;
+}
+
+md-content{
+	background-color: #efefef;
+}
+
+.error-message{
+	color:red !important;
+	font-size: 0.7em !important;
+}
+
+/* Login CSS End */
+
+.logo{
+	margin-left: 2em !important;
+	background-color: #f5f5f5;
+}
+
+.md-nav-bar{
+	border:none;
+}
+.ext-content {
+  padding: 50px !important;
+  margin: 20px !important;
+  background-color: #FFF2E0!important; 
+}
+
+#reportWise{
+	margin-top: 0.11em;
+}
+
