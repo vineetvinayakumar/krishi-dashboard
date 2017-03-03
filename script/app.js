@@ -6,7 +6,7 @@
 	  .controller('AppCtrl', AppCtrl);
 
   function AppCtrl($scope) {
-	$scope.currentNavItem = 'page1';
+	$scope.currentNavItem = 'dashboard';
   }
 
 	app.config(function($stateProvider, $urlRouterProvider) {

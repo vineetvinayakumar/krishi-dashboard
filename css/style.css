@@ -1,9 +1,9 @@
 body{
-	background-color: #efefef;
+	background-color: #f5f5f5;
 }
 
 .container{
-	padding: 0 2em;
+	padding: 0 1em;
 }
 
 #date{
@@ -45,7 +45,7 @@ md-input-container{
 }
 
 md-content{
-	background-color: #efefef;
+	background-color: #f5f5f5;
 }
 
 .error-message{
@@ -73,3 +73,38 @@ md-content{
 	margin-top: 0.11em;
 }
 
+
+/* Dashboard CSS Start */
+md-card{
+	background-color: #eeeeee !important;
+}
+
+.myCard{
+	min-height: 150px;
+}
+
+.cardMainHeadCount{
+	font-size: 2.5em;
+	font-weight: 600;
+	padding: 0.6em 0;
+}
+
+.cardsubHeadCount{
+	font-size: 1.5em;
+	font-weight: 700;
+	padding: 1.4em 0;
+}
+
+.cardLabel{
+	font-size: 0.7em;
+	color: #858484;
+	font-weight: 500;
+	letter-spacing: 1px;
+}
+
+.cardHeading{
+	font-size: 1em;
+	font-weight: 500;
+}
+
+/* Dashboard CSS end */
