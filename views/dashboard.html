@@ -1,3 +1,5 @@
+<script type="text/javascript" src="node_modules/chart.js/dist/Chart.js"></script>
+<script type="text/javascript" src="script/graph.js"></script>
 <div id="dashboardSection">
 	<md-content class="md-padding" layout-xs="column" layout="row">
 		<div flex-xs flex-gt-xs="50" layout="column">
@@ -54,7 +56,10 @@
 		  <md-card class="myCard" md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}" md-theme-watch>
 			<md-card-title layout="column">
 			  <div layout="row" layout-align="" class="cardHeading">
-				  IVR Channel Calls
+				  IVR Channel Selection
+			  </div>
+		      <div layout="row" layout-align="" class="">
+				<canvas id="ivrchannelSection" width="auto" height="300"></canvas>
 			  </div>
 			</md-card-title>
 		  </md-card>
@@ -65,6 +70,9 @@
 			  <div layout="row" layout-align="" class="cardHeading">
 				  Top 5 Crops Farming
 			  </div>
+		      <div layout="row" layout-align="" class="">
+				<canvas id="topcropSection" width="auto" height="300"></canvas>
+			  </div>
 			</md-card-title>
 		  </md-card>
 		</div>
@@ -73,6 +81,9 @@
 			<md-card-title layout="column">
 			  <div layout="row" layout-align="" class="cardHeading">
 				  Type of Farming
+			  </div>
+			  <div layout="row" layout-align="" class="">
+				<canvas id="farmingTypeSection" width="auto" height="300"></canvas>
 			  </div>
 			</md-card-title>
 		  </md-card>
@@ -93,6 +104,58 @@
 			<md-card-title layout="column">
 			  <div layout="row" layout-align="" class="cardHeading">
 				  Overall Circle Report
+			  </div>
+			  <div layout="row" layout-align="" class="">
+				  <table class="" width="100%">
+					  <tr>
+						  <th></th>
+						  <th>Miss Call</th>
+						  <th>Unique Call</th>
+						  <th>Repeat Call</th>
+						  <th>Call Duration</th>
+						  <th>Total Average</th>
+					  </tr>
+				  	  <tr>
+						  <td class="sideTableheading">Aurangabad</td>
+					  	  <td>2,204</td>
+						  <td>670</td>
+						  <td>1376</td>
+						  <td>02:30:00</td>
+						  <td>60.45%</td>
+					  </tr>
+					  <tr>
+						  <td class="sideTableheading">Kaas Plateau</td>
+					  	  <td>2,204</td>
+						  <td>670</td>
+						  <td>1376</td>
+						  <td>02:30:00</td>
+						  <td>60.45%</td>
+					  </tr>
+					  <tr>
+						  <td class="sideTableheading">Nashik</td>
+					  	  <td>2,204</td>
+						  <td>670</td>
+						  <td>1376</td>
+						  <td>02:30:00</td>
+						  <td>60.45%</td>
+					  </tr>
+					  <tr>
+						  <td class="sideTableheading">Nagpur</td>
+					  	  <td>2,204</td>
+						  <td>670</td>
+						  <td>1376</td>
+						  <td>02:30:00</td>
+						  <td>60.45%</td>
+					  </tr>
+					  <tr>
+						  <td class="sideTableheading">Kolad</td>
+					  	  <td>2,204</td>
+						  <td>670</td>
+						  <td>1376</td>
+						  <td>02:30:00</td>
+						  <td>60.45%</td>
+					  </tr>
+				  </table>
 			  </div>
 			</md-card-title>
 		  </md-card>

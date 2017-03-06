@@ -107,4 +107,34 @@ md-card{
 	font-weight: 500;
 }
 
+
+table {
+	border-collapse:collapse;
+	margin: 12px 0;
+}
+
+table th{
+	border:1px solid #dddddd;
+	font-size: 0.8em;
+	padding: 10px;
+	text-align: center;
+	color:#616161;
+	font-weight: 400;
+	background-color: #ebebeb;
+}
+
+.sideTableheading{
+	color:#616161;
+	background-color: #ebebeb;
+	font-weight: 400;
+}
+
+table td{
+	border:1px solid #dddddd;
+	font-size: 0.8em;
+	padding: 10px;
+	text-align: center;
+	font-weight: 500;
+}
+
 /* Dashboard CSS end */
