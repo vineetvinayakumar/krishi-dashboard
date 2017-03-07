@@ -86,3 +86,5 @@ let farmingTypeSection = new Chart(farmingType, {
 
 
 
+
+
